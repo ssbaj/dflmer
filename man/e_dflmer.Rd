@@ -19,7 +19,7 @@ HLM dataset
   1) salary_data  
   2) therapie  
     
-  # Carolyn dataset ---- 
+## Carolyn dataset ---- 
   depression_data_long 
   hsb1data 
   hsb2data 
@@ -28,12 +28,16 @@ HLM dataset
   nels10 
   respitory 
   RIESBY_data_time_varying_for_r 
-    
+
+## Bodo Winter ---- 
+   politeness_data
+
 ## lmer dataset -----------  
     
   ﻿icc <- function(modl){   
        vars <- as.data.frame(VarCorr(modl))[4] 
-       total <- sum(vars)  tau00 <- vars[1,1] 
+       total <- sum(vars)
+       tau00 <- vars[1,1] 
        icc <- tau00/total 
        return(icc)  }  # example of how to use this  
 
